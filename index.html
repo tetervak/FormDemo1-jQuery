@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Input</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header>
+    <h1>Input</h1>
+</header>
+<main>
+    <form id="studentForm" method="post" action="output.html">
+        <h2>Student Name</h2>
+        <p>
+            <label for="first" class="group_label">First Name</label><br>
+            <input id="first" type="text" name="firstName">
+        </p>
+        <p>
+            <label for="last" class="group_label">Last Name</label><br>
+            <input id="last" type="text" name="lastName">
+        </p>
+        <h2>Student Info</h2>
+        <p>
+            <label for="prog" class="group_label">Program</label><br>
+            <select id="prog" name="programName">
+                <option value="Computer Programmer">Computer Programmer</option>
+                <option value="Systems Technology">Systems Technology</option>
+                <option value="Engineering Technician">Engineering Technician</option>
+                <option value="Systems Technician">Systems Technician</option>
+            </select>
+        </p>
+        <p>
+            <label class="group_label">Year</label><br>
+            <label><input type="radio" name="programYear" value="1" checked>1</label>
+            <label><input type="radio" name="programYear" value="2">2</label>
+            <label><input type="radio" name="programYear" value="3">3</label>
+        </p>
+        <p>
+            <label class="group_label">Options</label><br>
+            <label><input type="checkbox" name="programCoop">Co-op</label>
+            <label><input type="checkbox" name="programInternship">Internship</label>
+        </p>
+        <p>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Send">
+        </p>
+    </form>
+</main>
+</body>
+</html>
